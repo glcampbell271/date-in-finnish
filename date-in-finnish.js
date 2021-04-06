@@ -96,6 +96,6 @@ const dateInFinnish = (() => {
 })()
 
 // If running in Node, export dateInFinnish to be used by other scripts.
-if (process && 'env' in process) {
+if (typeof process !== 'undefined' && 'env' in process) {
   module.exports = dateInFinnish
 }
